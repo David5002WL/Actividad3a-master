@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    >
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_alignBaseline="@+id/textNombre"
+        android:layout_toRightOf="@+id/textNombre"/>
+    <TextView
+        android:id="@+id/textDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI: "
+        android:layout_below="@+id/textNombre"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/editDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDNI"
+        android:hint="DNI"
+        android:layout_toRightOf="@+id/textDNI"/>
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento: "
+        android:layout_below="@id/textDNI"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/editFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFecha"
+        android:hint="FechaDeNacimiento"
+        android:layout_toRightOf="@+id/textFecha"/>
+    <TextView
+        android:id="@+id/textRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo: "
+        android:layout_below="@id/textFecha"
+        android:layout_marginTop="20dp"
+        />
+    <RadioGroup
+        android:id="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRadioGroup">
+
+        <RadioButton
+            android:id="@+id/sexoHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+        android:id="@+id/sexoMujer"
+        android:text="Mujer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/sexo"
+        android:hint="Guardar y mostrar" />
+
+</RelativeLayout>
